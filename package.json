@@ -1,0 +1,19 @@
+{
+  "name": "opencode_rep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.1",
+    "ejs-lint": "^1.0.1",
+    "express": "^4.17.1",
+    "firebase": "^7.9.3",
+    "start-script": "^0.1.0"
+  }
+}

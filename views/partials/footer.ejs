@@ -1,0 +1,82 @@
+
+  <style>
+    .footy{
+      display : flex;
+      background-color : rgb(25,33,44);
+      justify-content : center;
+      align-items : center;
+      height :20vh;
+    }
+    .fa {
+      padding: 40px;
+      font-size: 50px;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      text-align: center;
+      text-decoration: none;
+    }
+    .clr{
+      color: rgb(124,143,170);
+    }
+    .clr:hover{
+      color: rgb(219,169,197);
+      text-decoration: none;
+
+    }
+    .copyrgt{
+      font-family: Courier;
+      color: rgb(124,143,170);
+    }
+</style>
+
+<div class="footy"style="margin-top:300px">
+  <a href="#" class="fa-2x fa clr fa-rss"></a>
+  <a href="#" class="fa-2x fa clr fa-twitter"></a>
+  <a href="#" class="fa-2x fa clr fa-google"></a>
+  <a href="#" class="fa-2x fa clr fa-dribbble"></a>
+  <a href="#" class="fa-2x fa clr fa-linkedin"></a>
+</div>
+
+  <div class="copyrgt footy">
+    <p>Created during: Opencode-2020</p>
+  </div>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script>
+    $(window).on('load', function() {
+      //Preloader
+      preloaderFadeOutTime = 500;
+      var preloader = $('.spinner-wrapper');
+      preloader.delay(preloaderFadeOutTime).fadeOut('slow');
+      }
+     );
+   </script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-auth.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB51DqHXZBfX_xSd1Igl39sI0At9V13kqs",
+    authDomain: "opencode2020-project.firebaseapp.com",
+    databaseURL: "https://opencode2020-project.firebaseio.com",
+    projectId: "opencode2020-project",
+    storageBucket: "opencode2020-project.appspot.com",
+    messagingSenderId: "815739585652",
+    appId: "1:815739585652:web:721409dfe0f072b8ec3d21",
+    measurementId: "G-PNKP7181NT"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+</body>
+</html>
